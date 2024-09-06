@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruits App</title>
+    <title>All Fruits</title>
   </head>
   <body>
-    <h1>Welcome to the fruits app!</h1>
-    <a href="/fruits/new">Create a Fruit</a>
-    <a href="/fruits">All Fruits</a>
+    <h1>All Fruits Page</h1>
+
+    <ul>
+      <% fruitDocs.forEach(fruit => { %> 
+        <li><%= fruit.name %></li>
+        <% }) %>
+    </ul>
   </body>
 </html>
